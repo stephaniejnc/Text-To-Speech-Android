@@ -4,9 +4,11 @@ import android.os.Build;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Locale;
@@ -73,4 +75,8 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onDestroy();
     }
+
+//    static CharSequence getTextOrHint(TextView tv) {
+//        return(TextUtils.isEmpty(getText()) ? getHint() : getText());
+//    }
 }
